@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="Register.css" />
+  <!-- Toastr CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <title>Registration Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="logo">
+        <img src="assets/project.png" alt="logo" />Create New Account
+      </div>
+      <h1>Registration Form</h1>
+      <div class="Registerform">
+        <div class="input__row">
+          <div class="input__group">
+            <input type="text" id="firstname" name="firstname" placeholder=" " />
+            <label for="firstname">First Name</label>
+            <span class="error__field"></span>
+          </div>
+          <div class="input__group">
+            <input type="text" id="lastname" name="lastname" placeholder=" "  />
+            <label for="lastname">Last Name</label>
+            <span class="error__field"></span>
+          </div>
+        </div>
+        <div class="input__group">
+          <input type="text" id="username" name="username" placeholder=" "  />
+          <label for="username">User Name</label>
+          <span class="error__field"></span>
+        </div>
+        <div class="input__group">
+          <input type="text" id="email" name="email" placeholder=" "  />
+          <label for="email">Email</label>
+          <span class="error__field"></span>
+        </div>
+        <div class="input__group">
+          <input type="text" id="phone" name="phone" placeholder=" "  />
+          <label for="phone">Phone Number</label>
+          <span class="error__field"></span>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-lock-2-line"></i></span>
+          <div class="input__group">
+            <input id="password" type="password" name="password" placeholder=" "  />
+            <label for="name">Password</label>
+            <span class="error__field"></span>
+          </div>
+        </div>
+        <button id="registernewuser">Register</button>
+      </div>
+    </div>
+    <div class="image"></div>
+  </div>
+
+</body>
+
+</html>

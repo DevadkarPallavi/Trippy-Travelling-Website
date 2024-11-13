@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/back3.jpeg"); /* Background image */
+            background-color: #f3f3f3;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure background image doesn't overflow */
+            text-align: left; /* Align all content to the left */
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .heading h1 {
+            font-family: 'Pacifico', cursive; /* Stylish font */
+            font-size: 36px;
+            color: #333;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
+            animation: fadeIn 1s ease; /* Animation effect */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .campfire-image {
+            text-align: left; /* Align image to the left */
+            margin-bottom: 30px;
+        }
+
+        .campfire-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+            animation: slideIn 1s ease; /* Animation effect */
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .campfire-info {
+            margin-bottom: 40px;
+            text-align: left; /* Align text to the left */
+        }
+
+        .campfire-info h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .campfire-info p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .rate {
+            text-align: left;
+            margin-bottom: 30px;
+            width: 200px; /* Set the width to 200 pixels */
+            height: auto; /* Let the height adjust based on content */
+            padding: 10px; /* Add padding for better spacing */
+            background-color: black; /* Add a background color for better visibility */
+            border-radius: 8px; /* Add border radius for rounded corners */
+            color: white; /* Set text color to white */
+        }
+        
+        .rate:hover {
+            background-color: purple;
+        }
+        
+
+        .highlights {
+            margin-bottom: 40px;
+        }
+
+        .highlights h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: left; /* Align text to the left */
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .highlight-item img {
+            width: 50px; /* Adjust the width as needed */
+            height: 50px; /* Adjust the height as needed */
+            margin-right: 10px;
+        }
+
+        .highlight-item p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .additional-types {
+            margin-bottom: 40px;
+        }
+
+        .additional-types h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: left; /* Align text to the left */
+        }
+
+        .additional-types ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left; /* Align text to the left */
+        }
+
+        .additional-types li {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .cta-container {
+            text-align: left; /* Align button to the left */
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        .btn {
+            background-color: #000;
+           
+            color: #fff;
+            padding: 8px 16px; /* Reduced padding */
+            font-size: 16px; /* Reduced font size */
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+        }
+
+        .btn:hover {
+            background-color: purple;
+            color: #fff; /* Text color change on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>World Tour</h1>
+        </div>
+
+        <div class="campfire-image">
+            <img src="images/advanture_2.webp" alt="Campfire Image">
+        </div>
+
+        <div class="campfire-info">
+            <h2>About World Tour</h2>
+            <p>
+                Embark on the journey of a lifetime with our exhilarating World Tour, where every destination is a new chapter in your epic adventure. From the towering skyscrapers of bustling metropolises to the serene landscapes of remote villages, this globe-trotting expedition promises to ignite your sense of wanderlust and leave you with memories to last a lifetime.
+
+As you traverse the globe, you'll immerse yourself in the vibrant cultures and rich histories of diverse nations and peoples. Explore ancient ruins and archaeological wonders that whisper tales of bygone civilizations, and marvel at the architectural marvels that dot the world's most iconic cities. From the majestic pyramids of Egypt to the awe-inspiring Great Wall of China, every stop on your journey offers a glimpse into the wonders of human ingenuity and creativity.
+
+But the World Tour is not just about sightseeing; it's about immersing yourself in the rhythms and routines of daily life in far-flung corners of the globe. Whether you're haggling with vendors in bustling markets, savoring exotic flavors at street food stalls, or dancing the night away at a local festival, every moment is an opportunity to connect with the people and cultures that make each destination unique.
+
+Throughout your journey, you'll be accompanied by experienced guides who are passionate about sharing their knowledge and love for their homeland. They'll lead you off the beaten path to hidden gems and secret spots that few tourists ever have the chance to see, ensuring that your World Tour is filled with unforgettable moments of discovery and adventure.
+
+From the snow-capped peaks of the Himalayas to the pristine beaches of the Caribbean, the World Tour is a celebration of the diversity and beauty of our planet. So pack your bags, leave your worries behind, and get ready to embark on the adventure of a lifetime. The world is waiting – are you ready to explore it?</p>
+
+        </div>
+
+        <div class="rate">
+            <h3>Rate</h3>
+            <p>Starting from RS 2500/- per person per night</p>
+        </div>
+
+        <div class="highlights">
+            <h3>Highlights</h3>
+            <div class="highlight-item" onclick="redirectToPage('Diverse_Destinations.html')">
+                <a href="Diverse_Destinations.html">
+                    <img src="images/Diverse Destinations.jpeg" alt="Cozy Atmosphere Icon" />
+                    <p style="color: blue;">Diverse Destinations</p>
+                </a>
+            </div>
+            <div class="highlight-item" onclick="redirectToPage('Natural_Wonders.html')">
+                <a href="Natural_Wonders.html">
+                    <img src="images/Natural Wonders.jpeg" alt="Marshmallow Roasting Icon" />
+                    <p style="color: blue;">Natural Wonders</p>
+                </a>
+            </div>
+            <div class="highlight-item" onclick="redirectToPage('Iconic_Landmarks.html')">
+                <a href="Iconic_Landmarks.html">
+                    <img src="images/Iconic Landmarks.jpeg" alt="Storytelling Icon" />
+                    <p style="color: blue;">Iconic Landmarks</p>
+                </a>
+            
+        </div>
+
+        <div class="additional-types">
+            <h3>Additional Experiences</h3>
+            <ul>
+                <li>Off-the-Beaten-Path Destinations</li>
+                <li>TWildlife Watching</li>
+                <li>Local Encounters</li>
+                <li>Photography Opportunities</li>
+                <li>Flexibility and Customization</li>
+            </ul>
+        </div>
+
+        <div class="cta-container">
+            <a href="book.html" class="btn">Book Your Adventure Now</a>
+        </div>
+    </div>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</body>
+</html>

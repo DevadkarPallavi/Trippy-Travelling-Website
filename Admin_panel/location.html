@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("images/location1.jpeg"); /* Specify the path to your background image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff; /* White */
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Semi-transparent black background */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      }
+      h2 {
+        font-size: 24px;
+        color: #ffffff; /* White */
+        margin-bottom: 20px;
+      }
+      p {
+        color: #ffffff; /* White */
+        margin-bottom: 10px;
+      }
+      ul {
+        color: #ffffff; /* White */
+        margin-bottom: 20px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      form {
+        margin-bottom: 20px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.3
+        ); /* Semi-transparent white background */
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Soft white shadow */
+      }
+      label {
+        font-size: 16px;
+        color: #ffffff; /* White */
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        width: calc(100% - 20px); /* Adjust width to leave space for padding */
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ffffff; /* White */
+        border-radius: 5px;
+        margin-bottom: 10px; /* Add margin between input and button */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Semi-transparent white background */
+        color: #000000; /* Black text color */
+      }
+      button[type="submit"] {
+        background-color: #000000; /* Black */
+        color: #ffffff; /* White */
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px; /* Add margin to the left of the button */
+      }
+      button[type="submit"]:hover {
+        background-color: #6a0dad; /* Purple */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>1. Adventure and Tour Locations</h2>
+      <p>Explore the best adventure and tour destinations around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Auckland, New Zealand</li>
+        <li>Shimla, India</li>
+        <li>Interlaken, Switzerland</li>
+        <li>Whistler (British Columbia), Canada</li>
+        <li>Leh Ladakh, India</li>
+      </ul>
+      <h2>2. World Tour Locations</h2>
+      <p>Explore the best World tour around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Santorini, Greece:</li>
+        <li>Jammu & Kashmir, India</li>
+        <li>Machu Picchu, Peru</li>
+        <li>Kerela, India</li>
+        <li>Great Barrier Reef, Australia</li>
+        <li>Amalfi Coast, Italy</li>
+        <li>Abu Dhabi, Dubai</li>
+      </ul>
+
+      <h2>3. Trekking Locations</h2>
+      <p>Explore the best trekking experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Queenstown <u>Spots:</u>Tour du Mont Blanc, New Zealand:</li>
+        <li>Arusha<u>Spots:</u>Mount Kilimanjaro, Tanzania</li>
+        <li>Interlaken<u>Spots:</u> Tour du Mont Blanc, Switzerland</li>
+        <li>Kaza<u>Spots:</u>Spiti Valley Trek, India</li>
+      </ul>
+
+      <h2>4. Campfire Location</h2>
+      <p>Explore the best Campfire experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Reykjavik, Iceland</li>
+        <li>Tasmania, Austerila</li>
+        <li>Malvan, India</li>
+        <li>Pawana lake Pune, India</li>
+        <li>Cape Town, South Africa</li>
+      </ul>
+
+      <h2>5. Honey moon Location</h2>
+      <p>Explore the best Honey moon experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Kyoto, Japan</li>
+        <li>Tasmania, Austerila</li>
+        <li>Seychelles, Seychelles</li>
+        <li>Amalfi Coast, Italy</li>
+        <li>Lakshadweep, India</li>
+      </ul>
+      <h2>6. Wild-line Location</h2>
+      <p>Explore the best Wild-line experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Second Beach, US</li>
+        <li>Karkar Island, Papua New Guinea</li>
+        <li>Rainbow Mountain, Peru</li>
+        <li>Lake Toba, Indonasia</li>
+        <li>County Galway, Ireland</li>
+      </ul>
+
+      <h2>7. Over-land Discovery Location</h2>
+      <p>Explore the best Over-land experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Alice Springs, Australia</li>
+        <li>Flagstaff, US</li>
+        <li>Calgary, Canada</li>
+      </ul>
+
+      <h2>8. Camping Location</h2>
+      <p>Explore the best Camping experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Pavana lake Pune, India</li>
+        <li>Cairo , Egypt</li>
+        <li>Moscow, Russia</li>
+      </ul>
+
+      <h2>9. Mountain Cycling Location</h2>
+      <p>Explore the best Mountain Cycling experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Leh, Ladakh, Jammu and Kashmir, India</li>
+        <li>Chamonix , France</li>
+        <li>Moab, Utah, US</li>
+      </ul>
+      <h2>10. Jungle Safari Location</h2>
+      <p>Explore the best Jungle Safari experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Kaziranga, India</li>
+        <li>Bandipur , India</li>
+        <li>Ranthambore, India</li>
+      </ul>
+      <h2>11. Photography Expedition Location</h2>
+      <p>Explore the best Jungle Safari experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Reykjavik<u>spot:</u>Glaciers, waterfalls, volcanoes, Iceland</li>
+        <li>
+          Oslo <u>spot:</u>Fjords, Lofoten Islands, Northern Lights , Norway
+        </li>
+        <li>
+          New Delhi <u>spots:</u>Taj Mahal, Rajasthan palaces, Himalayan
+          landscapes, India
+        </li>
+      </ul>
+      <h2>12. Intrepid Travel Location</h2>
+      <p>Explore the best Intrepid Travel experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>London, UK</li>
+        <li>Havana , Cuba</li>
+        <li>Kathmandu , Nepal</li>
+      </ul>
+      <h2>13. Desert Safari Adventure Location</h2>
+      <p>
+        Explore the best Desert Safari Adventure experiences around the world.
+      </p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Almería, Spain</li>
+        <li>Kalutara , Sri Lanka</li>
+        <li>Sahara Desert , Tunisia</li>
+      </ul>
+      <h2>14. Coastal Expedition Location</h2>
+      <p>Explore the best Coastal Expedition experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Faro <u>spot:</u>Algarve coastline, Lagos, Sagres, Portugal</li>
+        <li>Bergen <u>spot:</u>Norwegian Fjords, Lofoten Islands, Norway</li>
+        <li>Andaman and Nicobar Islands , India</li>
+      </ul>
+      <h2>15. Cultural Trek Location</h2>
+      <p>Explore the best Cultural Trek experiences around the world.</p>
+      <p>Some of our featured locations:</p>
+      <ul>
+        <li>Lhasa, Tibet</li>
+        <li>Leh, India</li>
+        <li>Sapa , Vietnam:</li>
+      </ul>
+      <form id="locationForm" onsubmit="searchLocations(event)">
+        <label for="locations">Enter Locations (separated by commas):</label>
+        <input type="text" id="locations" name="locations" required />
+        <button type="submit">Search</button>
+      </form>
+      <a href="home.html">Go to Home Page</a>
+    </div>
+
+    <script>
+      function searchLocations(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        var locationsInput = document.getElementById("locations").value;
+        var encodedLocations = encodeURIComponent(locationsInput);
+
+        // Construct the Google Maps search URL with the encoded locations
+        var mapsURL =
+          "https://www.google.com/maps/search/?api=1&query=" + encodedLocations;
+
+        // Redirect the user to Google Maps with the search query
+        window.location.href = mapsURL;
+      }
+    </script>
+  </body>
+</html>

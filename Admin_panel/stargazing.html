@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stargazing</title>
+    <style>
+        
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: url("images/back2.jpeg"); /* Background image */
+                background-color: #f3f3f3;
+                background-size: cover;
+                background-repeat: no-repeat;
+          }
+        
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            position: relative; /* Position relative for image positioning */
+            text-align: center; /* Center text */
+            opacity: 0; /* Initially hide the image */
+            animation: fadeIn 0.5s ease forwards; /* Animation to fade in the image */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Fade in the image */
+            }
+        }
+
+        .cozy-image {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto; /* Center the image */
+        }
+
+        .return-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .return-button a {
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+        }
+
+        .return-button a:hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Stargazing</h2>
+        <div class="description">
+            <img class="cozy-image" src="images/starg.jpeg" alt="roasting_marshmallows">
+            <p>Embark on a celestial journey and lose yourself in the mesmerizing splendor of the night sky. Far from the city lights, our stargazing experience offers a rare opportunity to witness the universe in all its glory.</p>
+            <p>Lay back beneath a blanket of stars and marvel at the countless constellations scattered across the expanse above. Allow your imagination to roam freely as you trace the paths of shooting stars and distant planets, each one a testament to the boundless wonders of the cosmos.</p>
+            <p>Guided by expert astronomers, delve into the secrets of the night sky and learn to navigate by the light of the stars. Gain insights into the myths and legends that have shaped our understanding of the heavens, and discover the beauty of celestial phenomena such as meteor showers and lunar eclipses.</p>
+            <p>Whether you're a seasoned astronomer or simply an admirer of nature's grandeur, our stargazing experience promises an unforgettable evening of awe and inspiration, as you forge a deeper connection with the universe and the mysteries that lie beyond.</p>
+        </div>
+        </div>
+        <div class="return-button">
+            <a href="campfire.html">Return to Campfire Page</a>
+        </div>
+    </div>
+</body>
+</html>

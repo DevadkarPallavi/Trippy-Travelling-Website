@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Growth</title>
+    <style>
+        
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: url("images/back2.jpeg"); /* Background image */
+                background-color: #f3f3f3;
+                background-size: cover;
+                background-repeat: no-repeat;
+          }
+        
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            position: relative; /* Position relative for image positioning */
+            text-align: center; /* Center text */
+            opacity: 0; /* Initially hide the image */
+            animation: fadeIn 0.5s ease forwards; /* Animation to fade in the image */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Fade in the image */
+            }
+        }
+
+        .cozy-image {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto; /* Center the image */
+        }
+
+        .return-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .return-button a {
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+        }
+
+        .return-button a:hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Personal Growth</h2>
+        <div class="description">
+            <img class="cozy-image" src="images/Personal Growth.jpg" alt="Cozy Atmosphere Image">
+            <p>Trekking isn't just about traversing landscapes; it's a transformative journey of personal growth. As adventurers navigate rugged trails and conquer challenging terrain, they undergo profound changes, both physically and mentally. The physical demands of trekking build resilience, strength, and endurance, pushing trekkers beyond their limits and empowering them to overcome obstacles. With each step forward, trekkers gain confidence in their abilities, fostering a sense of self-belief that extends far beyond the trail. Moreover, trekking fosters mindfulness and presence as trekkers immerse themselves in the natural world, finding solace in the rhythm of their footsteps and the beauty of their surroundings. Away from the distractions of modern life, trekkers learn to be present in the moment, cultivating a deeper connection with themselves and the world around them. Ultimately, trekking is a journey of self-discovery, offering trekkers the opportunity to unlock their full potential, embrace new experiences, and emerge stronger, wiser, and more resilient than before.</p>
+        </div>
+        <div class="return-button">
+            <a href="trekking.html">Return to Trekking Page</a>
+        </div>
+    </div>
+</body>
+</html>

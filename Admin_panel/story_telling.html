@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storytelling_under_the_stars</title>
+    <style>
+        
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: url("images/back2.jpeg"); /* Background image */
+                background-color: #f3f3f3;
+                background-size: cover;
+                background-repeat: no-repeat;
+          }
+        
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            position: relative; /* Position relative for image positioning */
+            text-align: center; /* Center text */
+            opacity: 0; /* Initially hide the image */
+            animation: fadeIn 0.5s ease forwards; /* Animation to fade in the image */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Fade in the image */
+            }
+        }
+
+        .cozy-image {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto; /* Center the image */
+        }
+
+        .return-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .return-button a {
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+        }
+
+        .return-button a:hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Storytelling_under_the_stars</h2>
+        <div class="description">
+            <img class="cozy-image" src="images/story1.webp" alt="roasting_marshmallows">
+            <p>Immerse yourself in the enchanting tradition of storytelling as you gather under the twinkling canopy of the night sky. Let the gentle glow of the stars illuminate your imagination as captivating tales unfold, weaving a tapestry of wonder and intrigue.</p>
+    <p>Our expert storytellers will transport you to distant realms and bygone eras, spinning yarns of adventure, romance, and mystery. Listen intently as ancient legends come to life, their timeless wisdom echoing through the darkness.</p>
+    <p>Feel the magic of shared narratives binding you with fellow adventurers, as laughter and gasps punctuate the stillness of the night. With each tale told, new connections are forged, creating memories that will linger long after the final words have faded into the ether.</p>
+        </div>
+        <div class="return-button">
+            <a href="campfire.html">Return to Campfire Page</a>
+        </div>
+    </div>
+</body>
+</html>

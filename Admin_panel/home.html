@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Dropdown styling */
+    .dropdown {
+      position: absolute;
+      bottom: 15px;
+      right: 115px;
+      /* Adjust right position as needed */
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover {
+      background-color: transparent;
+    }
+
+    /* Avatar icon size */
+    .avatar-icon {
+      width: 30px;
+      /* Adjust size as needed */
+      height: 30px;
+      /* Adjust size as needed */
+      border-radius: 50%;
+      /* Make it round */
+    }
+
+    /* Adjust slider height */
+    .home-slider {
+      height: 500px;
+      /* Adjust height as needed */
+    }
+
+    /* Adjust services section position */
+    .services {
+      margin-top: 50px;
+      /* Adjust margin-top as needed */
+    }
+
+    #logoutButton {
+      margin-left: 15px;
+      background-color: transparent;
+      font-size: large;
+      border: none;
+      cursor: pointer;
+    }
+
+    #logoutButton:hover {
+      background-color: green;
+      color: white;
+    }
+
+    #logoutButton:hover i {
+      color: white;
+    }
+  </style>
+</head>
+
+<!-- header section start -->
+
+<body>
+  <input type="text" id="userEmailID" style="display: none;">
+  <section class="header">
+    <strong><a href="home.php" class="logo">Trippy Admin</a></strong>
+    <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="package.html">package</a>
+      <a href="admin_booking_table.php">User booking</a>
+      <a href="admin_Login.html">User Details</a>
+      <a href="admin_contact.php ">contact us</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <!-- Avatar icon -->
+          <img src="images/logo.webp" alt="Avatar" class="avatar-icon">
+        </button>
+        <div class="dropdown-content">
+          <button id="logoutButton">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+          <span id="username" style="display: none;">
+            <?php echo $_SESSION['username']; ?>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+  <!-- header section end -->
+
+  <!-- home section starts -->
+  <section class="home">
+    <div>
+      <img src="images/advanture_4.jpeg" alt="" />
+      <img src="images/trkking.jpeg" alt="" />
+      <img src="images/advanture_4.jpeg" alt="" />
+      </a>
+    </div>
+
+
+    <!-- <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="
+              background: url(images/HD.jpg) no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="content">
+              <span>explore, discover, travel</span>
+              <h3>travel around the world</h3>
+              <a href="package.html" class="btn">discover more</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide slide"
+            style="
+              background: url(images/HD3.jpg) no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="content">
+              <span>explore, discover, travel</span>
+              <h3>discover new places</h3>
+              <a href="package.html" class="btn">discover more</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide slide"
+            style="
+              background: url(images/HE.jpg) no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="content">
+              <span>explore, discover, travel</span>
+              <h3>make your tour worthwhile</h3>
+              <a href="package.html" class="btn">discover more</a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div> -->
+  </section>
+
+  <!-- home section ends -->
+
+  <!-- service section starts -->
+
+  <section class="services">
+    <h1 class="heading-title">Our services</h1>
+    <div class="box-container">
+      <div class="box">
+        <a href="package.html">
+          <img src="images/advanture.jpeg" alt="" />
+          <h3>Adventure</h3>
+        </a>
+      </div>
+      <div class="box">
+        <a href="package.html">
+          <img src="images/advanture_2.webp" alt="" />
+          <h3>World tour</h3>
+        </a>
+      </div>
+      <div class="box">
+        <a href="package.html">
+          <img src="images/trkking.jpeg" alt="" />
+          <h3>Trekking</h3>
+        </a>
+      </div>
+      <div class="box">
+        <a href="package.html">
+          <img src="images/camp.jpeg" alt="" />
+          <h3>Campfire</h3>
+        </a>
+      </div>
+      <div class="box">
+        <a href="package.html">
+          <img src="images/off.jpeg" alt="" />
+          <h3>Off road</h3>
+        </a>
+      </div>
+      <div class="box">
+        <a href="package.html">
+          <img src="images/capping.jpeg" alt="" />
+          <h3>Camping</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- servuce section ends -->
+
+  <!-- home about section start -->
+
+  <section class="home-about">
+    <div class="image">
+      <img src="images/aboutus.jpg" alt="" />
+    </div>
+    <div class="content">
+      <h3>About us</h3>
+      <p>
+        Welcome to Trippy, where wanderlust meets discovery. We believe that travel is not just about visiting new
+        destinations; it's about embarking on transformative journeys that enrich the soul.
+      </p>
+      <a href="about.html" class="btn">Read more </a>
+    </div>
+  </section>
+
+  <!-- home about section ends -->
+
+  <!-- home package section start -->
+
+  <section class="home-packages">
+    <h1 class="heading-title">our packages</h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="images/advanture.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Advanture and tour</h3>
+          <p>
+            Embark on a cultural trekking adventure, exploring diverse landscapes, engaging with local communities, and
+            creating lasting memories in unique cultural settings.<a href="advanture.html">more</a>
+          </p>
+          <a href="book.html" class="btn"> Book now </a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/advanture_2.webp" alt="" />
+        </div>
+        <div class="content">
+          <h3>World Tour</h3>
+          <p>
+            Embark on a global odyssey with our World Tour Package, spanning continents, cultures, and unforgettable
+            experiences, crafting a journey of a lifetime.<a href="world_tour.html">more</a>
+          </p>
+          <a href="book.html" class="btn"> Book now </a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/advanture_4.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Trekking</h3>
+          <p>
+            Embark on a thrilling trekking adventure, conquering diverse terrains and embracing the exhilarating
+            challenge of the great outdoors, where each step unveils.<a href="trekking.html">more</a>
+          </p>
+          <a href="book.html" class="btn"> Book now </a>
+        </div>
+      </div>
+    </div>
+    <div class="load-more">
+      <a href="package.html" class="btn"> Load more</a>
+    </div>
+  </section>
+
+  <!-- home package section ends -->
+
+  <!-- home offer section starts -->
+  <section class="home-offer">
+    <div class="content">
+      <h3>Upto 50% off</h3>
+      <p>Welcome to Trippy, your ultimate destination for unbeatable travel deals and discounts. We believe that
+        everyone deserves the opportunity to explore the world without breaking the bank.
+      </p>
+      <a href="book.html" class="btn"> Book now</a>
+    </div>
+  </section>
+
+  <!-- home offer section ends -->
+
+  <!-- footer section start -->
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Links</h3>
+        <strong><a href="home.html"><i class="fas fa-angle-right"></i> home</a></strong>
+        <strong><a href="about.html"><i class="fas fa-angle-right"></i> about</a></strong>
+        <strong><a href="package.html"><i class="fas fa-angle-right"></i> package</a></strong>
+        <strong><a href="book.html"><i class="fas fa-angle-right"></i> book</a></strong>
+      </div>
+
+      <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i> Privacy and Policies</a>
+        <a href="#"><i class="fas fa-angle-right"></i> Terms of use </a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +123-456-7890 </a>
+        <a href="#"><i class="fas fa-phone"></i> +111-222-3333 </a>
+        <a href="#"><i class="fas fa-envelope"></i> trippy@gmail.com </a>
+        <a href="#"><i class="fas fa-map"></i> Kolhapur, India - 416005 </a>
+      </div>
+
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+      </div>
+    </div>
+
+    <div class="credit">
+      created by <span> TY G2 </span> | all right reserved!
+    </div>
+  </section>
+
+  <!-- footer section ends -->
+
+  <!-- swipper link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

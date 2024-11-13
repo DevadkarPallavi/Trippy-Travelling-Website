@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <style>
+    /* Dropdown styling */
+    .dropdown {
+      position: absolute;
+      bottom: 15px;
+      right: 115px;
+      /* Adjust right position as needed */
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover {
+      background-color: transparent;
+    }
+
+    /* Avatar icon size */
+    .avatar-icon {
+      width: 30px;
+      /* Adjust size as needed */
+      height: 30px;
+      /* Adjust size as needed */
+      border-radius: 50%;
+      /* Make it round */
+    }
+
+    /* Adjust slider height */
+    .home-slider {
+      height: 500px;
+      /* Adjust height as needed */
+    }
+
+    /* Adjust services section position */
+    .services {
+      margin-top: 50px;
+      /* Adjust margin-top as needed */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header section starts -->
+  <section class="header">
+    <!-- Logo -->
+    <strong><a href="home.html" class="logo">Trippy.</a></strong>
+    <!-- Navigation links -->
+    <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="package.html">package</a>
+      <a href="book.html">book</a>
+      <a href="location.html">Location</a>
+      <a href="user_contact.php">contact us</a>
+      <!-- Move the dropdown menu to the end -->
+    </nav>
+
+    <!-- Menu button -->
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+  <!-- header section ends -->
+
+  <div class="heading" style="
+        background-image: url('images/AB.jpg');
+        background-repeat: no-repeat;
+      ">
+    <strong>
+      <h1>About us</h1>
+    </strong>
+  </div>
+
+  <!-- about section starts -->
+  <section class="about">
+    <div class="image">
+      <img src="images/HD4.jpg" alt="" />
+    </div>
+
+    <div class="content">
+      <h3>Why choose us.?</h3>
+      <p>1. "Discover endless possibilities with Trippy. Explore the world, create memories, and embark on unforgettable
+        adventures."<br>
+        2. "Unlock the magic of travel with Trippy. Find exclusive deals, plan your dream vacation, and make every
+        journey extraordinary."<br>
+        3. "Experience the world like never before with Trippy. From breathtaking landscapes to vibrant cultures, let us
+        be your guide to adventure."<br>
+        4. "Your passport to wanderlust awaits at Trippy. Start exploring today and make your travel dreams a
+        reality."<br>
+        5. "Wherever your wanderlust takes you, Trippy is here to help you get there. Find inspiration, plan your trip,
+        and set off on your next great adventure."<br>
+      </p>
+
+      <div class="icons-container">
+        <div class="icon">
+          <i class="fas fa-map">
+            <span>top destinations</span>
+          </i>
+        </div>
+        <div class="icon">
+          <i class="fas fa-hand-holding-usd">
+            <span>Afforable price</span>
+          </i>
+        </div>
+        <div class="icon">
+          <i class="fas fa-headset">
+            <span>24/7 service </span>
+          </i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section ends -->
+
+  <!-- review section starts -->
+
+  <section class="reviews">
+    <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+        <div class="slide">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Discover firsthand experiences from our valued customers in the customer review section. Real stories, real
+            adventures, real satisfaction."
+          </p>
+          <h3>Utkarsh malav</h3>
+          <span>Traveler</span>
+          <img src="images/utkarsh.jpeg" alt="" />
+        </div>
+
+        <div class="slide">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Browse through authentic customer reviews to gain insights and inspiration for your next trip. See why
+            travelers trust us to deliver unforgettable experiences."
+          </p>
+          <h3>Vijay shete</h3>
+          <span>Traveler</span>
+          <img src="images/vijay.jpeg" alt="" />
+        </div>
+
+        <div class="slide">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Explore what our customers have to say about their journeys with us. From heartwarming moments to thrilling
+            adventures, our reviews paint a vivid picture of the travel experiences we offer."
+          </p>
+          <h3>Shruti ugale</h3>
+          <span>Traveler</span>
+          <img src="images/shruti.jpeg" alt="" />
+        </div>
+
+        <div class="slide">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Find out why travelers love booking with us by reading our customer reviews. Join the conversation and
+            share your own travel tales with our community."
+          </p>
+          <h3>Pallavi devadkar</h3>
+          <span>Traveler</span>
+          <img src="images/pallavi.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- review section ends -->
+
+  <!-- footer section start -->
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Links</h3>
+        <strong><a href="home.php"><i class="fas fa-angle-right"></i> home</a></strong>
+        <strong><a href="about.php"><i class="fas fa-angle-right"></i> about</a></strong>
+        <strong><a href="package.php"><i class="fas fa-angle-right"></i> package</a></strong>
+        <strong><a href="book.php"><i class="fas fa-angle-right"></i> book</a></strong>
+      </div>
+
+      <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i> Privacy and Policies</a>
+        <a href="#"><i class="fas fa-angle-right"></i> Terms of use </a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i> +123-456-7890 </a>
+        <a href="#"><i class="fas fa-phone"></i> +111-222-3333 </a>
+        <a href="#"><i class="fas fa-envelope"></i> trippy@gmail.com </a>
+        <a href="#"><i class="fas fa-map"></i> Kolhapur, India - 416005 </a>
+      </div>
+
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+      </div>
+    </div>
+
+    <div class="credit">
+      created by <span> TY G2 </span> | all right reserved!
+    </div>
+  </section>
+
+  <!-- footer section ends -->
+
+  <!-- swipper link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
